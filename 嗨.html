@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="zh-TW"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;我的課表&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f4f7f6;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>table {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-collapse: collapse;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 800px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 6px rgba(0,0,0,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>th, td {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #e0e0e0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>th {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #5c67f2;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>tr:nth-child(even) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #fafafa;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* 第一欄（節數）的樣式 */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>td:first-child {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #eee;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 60px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* 課程格子點擊效果 */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.course-cell:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #e8eaff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h2 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;📅 我的課表&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;th&gt;節數&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;th&gt;週一&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;th&gt;週二&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;th&gt;週三&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;th&gt;週四&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;th&gt;週五&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tbody id="timetable-body"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/table&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const tbody = document.getElementById('timetable-body');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const days = 5; // 週一到週五</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const periods = 7; // 一到七節</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>for (let i = 1; i &lt;= periods; i++) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let row = document.createElement('tr');</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// 第一欄：節數</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let periodCell = document.createElement('td');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>periodCell.innerText = i;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>row.appendChild(periodCell);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// 生成五天份的格子</p>
+<p class="p1"><span class="Apple-converted-space">        </span>for (let j = 0; j &lt; days; j++) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let cell = document.createElement('td');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cell.className = 'course-cell';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cell.contentEditable = true; // 讓使用者可以直接點擊編輯內容</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cell.innerText = ""; // 預設空白</p>
+<p class="p1"><span class="Apple-converted-space">            </span>row.appendChild(cell);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>tbody.appendChild(row);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
